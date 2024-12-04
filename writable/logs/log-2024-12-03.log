@@ -1,0 +1,28 @@
+CRITICAL - 2024-12-03 23:45:18 --> ErrorException: Undefined array key "correo"
+[Method: GET, Route: usuarios]
+in APPPATH\Views\usuarios\index.php on line 41.
+ 1 APPPATH\Views\usuarios\index.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "correo"', 'C:\\laragon\\www\\fotobook\\app\\Views\\usuarios\\index.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\fotobook\\app\\Views\\usuarios\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('usuarios/index', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(29): view('usuarios/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-03 23:46:28 --> ErrorException: Undefined array key "correo"
+[Method: GET, Route: usuarios]
+in APPPATH\Views\usuarios\index.php on line 41.
+ 1 APPPATH\Views\usuarios\index.php(41): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "correo"', 'C:\\laragon\\www\\fotobook\\app\\Views\\usuarios\\index.php', 41)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\fotobook\\app\\Views\\usuarios\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('usuarios/index', [], true)
+ 5 APPPATH\Controllers\UsuarioController.php(29): view('usuarios/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UsuarioController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UsuarioController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

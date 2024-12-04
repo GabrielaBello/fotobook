@@ -1,0 +1,1786 @@
+CRITICAL - 2024-12-04 02:24:16 --> ParseError: syntax error, unexpected double-quoted string "imagen", expecting ")"
+[Method: GET, Route: usuarios]
+in APPPATH\Controllers\UsuarioController.php on line 60.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\paquetes\\app\\Controllers\\UsuarioController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UsuarioController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UsuarioController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\UsuarioController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 02:31:45 --> ParseError: syntax error, unexpected double-quoted string "imagen", expecting ")"
+[Method: GET, Route: usuarios]
+in APPPATH\Controllers\UsuarioController.php on line 60.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\paquetes\\app\\Controllers\\UsuarioController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UsuarioController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UsuarioController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\UsuarioController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 02:32:20 --> ParseError: syntax error, unexpected double-quoted string "imagen", expecting ")"
+[Method: GET, Route: usuarios]
+in APPPATH\Controllers\UsuarioController.php on line 60.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\paquetes\\app\\Controllers\\UsuarioController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\UsuarioController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\UsuarioController')
+ 4 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\UsuarioController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 03:29:43 --> ErrorException: Undefined array key "cantidadFotos"
+[Method: GET, Route: paquetes]
+in APPPATH\Views\paquetes\index.php on line 39.
+ 1 APPPATH\Views\paquetes\index.php(39): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "cantidadFotos"', 'C:\\laragon\\www\\fotobook\\app\\Views\\paquetes\\index.php', 39)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\fotobook\\app\\Views\\paquetes\\index.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paquetes/index', [], true)
+ 5 APPPATH\Controllers\PaqueteController.php(17): view('paquetes/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 03:31:26 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquete...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquete...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquete...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquete...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\laragon\www\fotobook\system\Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', Array)
+#8 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-04 03:31:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: POST, Route: paquetes/1/update]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 03:31:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'Paquete básico\', `descripcion` = \'Cámara, sensor y control remoto.\', `precio` = \'299.99\', `imagen` = \'paquete_basicon.jpg\', `updated_at` = \'2024-12-04 03:31:26\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'Paquete básico\', `descripcion` = \'Cámara, sensor y control remoto.\', `precio` = \'299.99\', `imagen` = \'paquete_basicon.jpg\', `updated_at` = \'2024-12-04 03:31:26\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 03:31:26 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquetes` SET `nombre` = \'Paquete básico\', `descripcion` = \'Cámara, sensor y control remoto.\', `precio` = \'299.99\', `imagen` = \'paquete_basicon.jpg\', `updated_at` = \'2024-12-04 03:31:26\'
+WHERE `paquetes`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'Paquete básico\', `descripcion` = \'Cámara, sensor y control remoto.\', `precio` = \'299.99\', `imagen` = \'paquete_basicon.jpg\', `updated_at` = \'2024-12-04 03:31:26\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'Paquete básico\', `descripcion` = \'Cámara, sensor y control remoto.\', `precio` = \'299.99\', `imagen` = \'paquete_basicon.jpg\', `updated_at` = \'2024-12-04 03:31:26\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 03:45:46 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquete...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquete...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquete...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquete...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\laragon\www\fotobook\system\Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('7', Array)
+#8 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->update('7')
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-04 03:45:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: POST, Route: paquetes/7/update]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('7', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('7')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 03:45:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 03:45:46\'
+WHERE `paquetes`.`id` IN (\'7\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 03:45:46\'
+WHERE `paquetes`.`id` IN (\'7\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('7', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('7')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 03:45:46 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 03:45:46\'
+WHERE `paquetes`.`id` IN (\'7\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 03:45:46\'
+WHERE `paquetes`.`id` IN (\'7\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 03:45:46\'
+WHERE `paquetes`.`id` IN (\'7\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('7', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('7')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 03:57:47 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquete...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquete...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquete...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquete...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\laragon\www\fotobook\system\Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('7', Array)
+#8 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->update('7')
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-04 03:57:47 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: POST, Route: paquetes/7/update]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('7', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('7')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 03:57:47 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 03:57:46\'
+WHERE `paquetes`.`id` IN (\'7\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 03:57:46\'
+WHERE `paquetes`.`id` IN (\'7\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('7', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('7')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 03:57:47 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 03:57:46\'
+WHERE `paquetes`.`id` IN (\'7\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 03:57:46\'
+WHERE `paquetes`.`id` IN (\'7\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 03:57:46\'
+WHERE `paquetes`.`id` IN (\'7\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('7', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('7')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 04:09:24 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquete...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquete...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquete...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquete...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\laragon\www\fotobook\system\Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('7', Array)
+#8 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->update('7')
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-04 04:09:24 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: POST, Route: paquetes/7/update]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('7', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('7')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:09:24 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 04:09:23\'
+WHERE `paquetes`.`id` IN (\'7\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 04:09:23\'
+WHERE `paquetes`.`id` IN (\'7\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('7', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('7')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:09:24 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 04:09:23\'
+WHERE `paquetes`.`id` IN (\'7\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 04:09:23\'
+WHERE `paquetes`.`id` IN (\'7\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 04:09:23\'
+WHERE `paquetes`.`id` IN (\'7\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('7', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('7')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 04:09:49 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquete...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquete...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquete...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquete...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\laragon\www\fotobook\system\Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('7', Array)
+#8 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->update('7')
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-04 04:09:49 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: POST, Route: paquetes/7/update]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('7', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('7')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:09:49 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 04:09:49\'
+WHERE `paquetes`.`id` IN (\'7\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 04:09:49\'
+WHERE `paquetes`.`id` IN (\'7\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('7', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('7')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:09:49 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 04:09:49\'
+WHERE `paquetes`.`id` IN (\'7\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 04:09:49\'
+WHERE `paquetes`.`id` IN (\'7\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 04:09:49\'
+WHERE `paquetes`.`id` IN (\'7\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('7', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('7')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 04:12:45 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquete...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquete...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquete...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquete...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\laragon\www\fotobook\system\Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('7', Array)
+#8 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->update('7')
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-04 04:12:45 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: POST, Route: paquetes/7/update]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('7', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('7')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:12:45 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 04:12:45\'
+WHERE `paquetes`.`id` IN (\'7\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 04:12:45\'
+WHERE `paquetes`.`id` IN (\'7\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('7', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('7')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:12:45 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 04:12:45\'
+WHERE `paquetes`.`id` IN (\'7\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 04:12:45\'
+WHERE `paquetes`.`id` IN (\'7\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'paquete cuco\', `descripcion` = \'cuca pelona\', `precio` = \'0\', `imagen` = \'paquete_cuco.jpg\', `updated_at` = \'2024-12-04 04:12:45\'
+WHERE `paquetes`.`id` IN (\'7\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('7', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('7')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:17:44 --> ErrorException: Undefined variable $data
+[Method: GET, Route: paquetes/7/edit]
+in APPPATH\Controllers\PaqueteController.php on line 45.
+ 1 APPPATH\Controllers\PaqueteController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\fotobook\\app\\Controllers\\PaqueteController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->edit('7')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:22:44 --> ErrorException: Undefined variable $data
+[Method: GET, Route: paquetes/5/edit]
+in APPPATH\Controllers\PaqueteController.php on line 45.
+ 1 APPPATH\Controllers\PaqueteController.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $data', 'C:\\laragon\\www\\fotobook\\app\\Controllers\\PaqueteController.php', 45)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->edit('5')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 04:23:22 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquete...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquete...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquete...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquete...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\laragon\www\fotobook\system\Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('5', Array)
+#8 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->update('5')
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-04 04:23:22 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: POST, Route: paquetes/5/update]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('5', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('5')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:23:22 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'Paquete familiaron\', `descripcion` = \'Termostato, asistente de voz y bombillas.\', `precio` = \'399.5\', `imagen` = \'paquete_familiar.jpg\', `updated_at` = \'2024-12-04 04:23:22\'
+WHERE `paquetes`.`id` IN (\'5\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'Paquete familiaron\', `descripcion` = \'Termostato, asistente de voz y bombillas.\', `precio` = \'399.5\', `imagen` = \'paquete_familiar.jpg\', `updated_at` = \'2024-12-04 04:23:22\'
+WHERE `paquetes`.`id` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('5', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('5')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:23:22 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquetes` SET `nombre` = \'Paquete familiaron\', `descripcion` = \'Termostato, asistente de voz y bombillas.\', `precio` = \'399.5\', `imagen` = \'paquete_familiar.jpg\', `updated_at` = \'2024-12-04 04:23:22\'
+WHERE `paquetes`.`id` IN (\'5\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'Paquete familiaron\', `descripcion` = \'Termostato, asistente de voz y bombillas.\', `precio` = \'399.5\', `imagen` = \'paquete_familiar.jpg\', `updated_at` = \'2024-12-04 04:23:22\'
+WHERE `paquetes`.`id` IN (\'5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'Paquete familiaron\', `descripcion` = \'Termostato, asistente de voz y bombillas.\', `precio` = \'399.5\', `imagen` = \'paquete_familiar.jpg\', `updated_at` = \'2024-12-04 04:23:22\'
+WHERE `paquetes`.`id` IN (\'5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('5', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('5')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 04:26:37 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquete...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquete...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquete...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquete...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\laragon\www\fotobook\system\Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', Array)
+#8 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-04 04:26:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: POST, Route: paquetes/1/update]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:26:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'Paquete básic\', `descripcion` = \'Cámara, sensor y control remoto.\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:26:37\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'Paquete básic\', `descripcion` = \'Cámara, sensor y control remoto.\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:26:37\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:26:37 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquetes` SET `nombre` = \'Paquete básic\', `descripcion` = \'Cámara, sensor y control remoto.\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:26:37\'
+WHERE `paquetes`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'Paquete básic\', `descripcion` = \'Cámara, sensor y control remoto.\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:26:37\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'Paquete básic\', `descripcion` = \'Cámara, sensor y control remoto.\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:26:37\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 04:26:52 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquete...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquete...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquete...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquete...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\laragon\www\fotobook\system\Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', Array)
+#8 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-04 04:26:52 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: POST, Route: paquetes/1/update]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:26:52 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:26:52\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:26:52\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:26:52 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:26:52\'
+WHERE `paquetes`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:26:52\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:26:52\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:41:16 --> ErrorException: Undefined variable $paquete
+[Method: GET, Route: paquetes/1/edit]
+in APPPATH\Views\paquetes\edit.php on line 17.
+ 1 APPPATH\Views\paquetes\edit.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $paquete', 'C:\\laragon\\www\\fotobook\\app\\Views\\paquetes\\edit.php', 17)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\laragon\\www\\fotobook\\app\\Views\\paquetes\\edit.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('paquetes/edit', [], true)
+ 5 APPPATH\Controllers\PaqueteController.php(45): view('paquetes/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 04:43:14 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquete...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquete...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquete...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquete...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\laragon\www\fotobook\system\Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', Array)
+#8 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-04 04:43:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: POST, Route: paquetes/1/update]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `cantidad_fotos` = :cantidad_fotos:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:43:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `cantidad_fotos` = \'50\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:43:14\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `cantidad_fotos` = \'50\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:43:14\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `cantidad_fotos` = :cantidad_fotos:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:43:14 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `cantidad_fotos` = \'50\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:43:14\'
+WHERE `paquetes`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `cantidad_fotos` = \'50\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:43:14\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `cantidad_fotos` = \'50\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:43:14\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `cantidad_fotos` = :cantidad_fotos:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 04:44:57 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquete...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquete...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquete...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquete...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\laragon\www\fotobook\system\Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(60): CodeIgniter\Model->update('1', Array)
+#8 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-04 04:44:57 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: POST, Route: paquetes/1/update]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `cantidad_fotos` = :cantidad_fotos:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\PaqueteController.php(60): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:44:57 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `cantidad_fotos` = \'50\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:44:57\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `cantidad_fotos` = \'50\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:44:57\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `cantidad_fotos` = :cantidad_fotos:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\PaqueteController.php(60): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:44:57 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `cantidad_fotos` = \'50\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:44:57\'
+WHERE `paquetes`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `cantidad_fotos` = \'50\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:44:57\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `cantidad_fotos` = \'50\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:44:57\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `cantidad_fotos` = :cantidad_fotos:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PaqueteController.php(60): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 04:52:09 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquete...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquete...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquete...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquete...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\laragon\www\fotobook\system\Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', Array)
+#8 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-04 04:52:09 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: POST, Route: paquetes/1/update]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `cantidad_fotos` = :cantidad_fotos:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:52:09 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `cantidad_fotos` = \'50\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:52:09\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `cantidad_fotos` = \'50\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:52:09\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `cantidad_fotos` = :cantidad_fotos:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:52:09 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `cantidad_fotos` = \'50\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:52:09\'
+WHERE `paquetes`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `cantidad_fotos` = \'50\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:52:09\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `cantidad_fotos` = \'50\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:52:09\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `cantidad_fotos` = :cantidad_fotos:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 04:52:42 --> mysqli_sql_exception: Unknown column 'updated_at' in 'field list' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquete...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquete...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquete...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquete...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(1028): CodeIgniter\Model->doUpdate(Array, Array)
+#6 C:\laragon\www\fotobook\system\Model.php(865): CodeIgniter\BaseModel->update(Array, Array)
+#7 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', Array)
+#8 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#12 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#13 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#14 {main}
+CRITICAL - 2024-12-04 04:52:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+[Method: POST, Route: paquetes/1/update]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `cantidad_fotos` = :cantidad_fotos:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 2 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 3 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 4 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 5 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:52:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `cantidad_fotos` = \'50\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:52:42\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `cantidad_fotos` = \'50\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:52:42\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `cantidad_fotos` = :cantidad_fotos:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 4 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 5 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 6 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 7 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 04:52:42 --> [Caused by] mysqli_sql_exception: Unknown column 'updated_at' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `cantidad_fotos` = \'50\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:52:42\'
+WHERE `paquetes`.`id` IN (\'1\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `cantidad_fotos` = \'50\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:52:42\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE `paquetes` SET `nombre` = \'Paquete básicon\', `descripcion` = \'Cámara, sensor y control remoto.\', `cantidad_fotos` = \'50\', `precio` = \'299.99\', `imagen` = \'paquete_basico.jpg\', `updated_at` = \'2024-12-04 04:52:42\'
+WHERE `paquetes`.`id` IN (\'1\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2516): CodeIgniter\Database\BaseConnection->query('UPDATE `paquetes` SET `nombre` = :nombre:, `descripcion` = :descripcion:, `cantidad_fotos` = :cantidad_fotos:, `precio` = :precio:, `imagen` = :imagen:, `updated_at` = :updated_at:
+WHERE `paquetes`.`id` IN :paquetes.id:', [...], false)
+ 5 SYSTEMPATH\Model.php(461): CodeIgniter\Database\BaseBuilder->update()
+ 6 SYSTEMPATH\BaseModel.php(1028): CodeIgniter\Model->doUpdate([...], [...])
+ 7 SYSTEMPATH\Model.php(865): CodeIgniter\BaseModel->update([...], [...])
+ 8 APPPATH\Controllers\PaqueteController.php(58): CodeIgniter\Model->update('1', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->update('1')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 05:16:13 --> mysqli_sql_exception: Duplicate entry '0' for key 'paquetes.usuario_id' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\fotobook\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\fotobook\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#11 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-12-04 05:16:13 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'paquetes.usuario_id'
+[Method: POST, Route: paquetes/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:16:13 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'paquetes.usuario_id'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquet_chido.jpg\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquet_chido.jpg\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:16:13 --> [Caused by] mysqli_sql_exception: Duplicate entry '0' for key 'paquetes.usuario_id'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquet_chido.jpg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquet_chido.jpg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquet_chido.jpg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 05:16:43 --> mysqli_sql_exception: Duplicate entry '0' for key 'paquetes.usuario_id' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\fotobook\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\fotobook\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#11 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-12-04 05:16:43 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'paquetes.usuario_id'
+[Method: POST, Route: paquetes/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:16:43 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'paquetes.usuario_id'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'99\', \'paquete_chido.jpg\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'99\', \'paquete_chido.jpg\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:16:43 --> [Caused by] mysqli_sql_exception: Duplicate entry '0' for key 'paquetes.usuario_id'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'99\', \'paquete_chido.jpg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'99\', \'paquete_chido.jpg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'99\', \'paquete_chido.jpg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 05:16:50 --> mysqli_sql_exception: Duplicate entry '0' for key 'paquetes.usuario_id' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\fotobook\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\fotobook\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#11 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-12-04 05:16:50 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'paquetes.usuario_id'
+[Method: POST, Route: paquetes/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:16:50 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'paquetes.usuario_id'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'10\', \'99\', \'paquete_chido.jpg\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'10\', \'99\', \'paquete_chido.jpg\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:16:50 --> [Caused by] mysqli_sql_exception: Duplicate entry '0' for key 'paquetes.usuario_id'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'10\', \'99\', \'paquete_chido.jpg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'10\', \'99\', \'paquete_chido.jpg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'10\', \'99\', \'paquete_chido.jpg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 05:17:20 --> mysqli_sql_exception: Duplicate entry '0' for key 'paquetes.usuario_id' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\fotobook\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\fotobook\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#11 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-12-04 05:17:20 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'paquetes.usuario_id'
+[Method: POST, Route: paquetes/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:17:20 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'paquetes.usuario_id'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'999\', \'paquete_chido.jpg\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'999\', \'paquete_chido.jpg\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:17:20 --> [Caused by] mysqli_sql_exception: Duplicate entry '0' for key 'paquetes.usuario_id'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'999\', \'paquete_chido.jpg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'999\', \'paquete_chido.jpg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'999\', \'paquete_chido.jpg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 05:18:12 --> mysqli_sql_exception: Duplicate entry '0' for key 'paquetes.usuario_id' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\fotobook\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\fotobook\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#11 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-12-04 05:18:12 --> CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'paquetes.usuario_id'
+[Method: POST, Route: paquetes/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:18:12 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Duplicate entry '0' for key 'paquetes.usuario_id'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'999\', \'paquete_chido.jpg\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'999\', \'paquete_chido.jpg\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:18:12 --> [Caused by] mysqli_sql_exception: Duplicate entry '0' for key 'paquetes.usuario_id'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'999\', \'paquete_chido.jpg\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'999\', \'paquete_chido.jpg\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'999\', \'paquete_chido.jpg\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 05:22:23 --> mysqli_sql_exception: Column 'usuario_id' cannot be null in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\fotobook\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\fotobook\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#11 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-12-04 05:22:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'usuario_id' cannot be null
+[Method: POST, Route: paquetes/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:, :usuario_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:22:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'usuario_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'999\', \'paquete_chido.jpg\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'999\', \'paquete_chido.jpg\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:, :usuario_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:22:23 --> [Caused by] mysqli_sql_exception: Column 'usuario_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'999\', \'paquete_chido.jpg\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'999\', \'paquete_chido.jpg\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'999\', \'paquete_chido.jpg\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:, :usuario_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 05:22:33 --> mysqli_sql_exception: Column 'usuario_id' cannot be null in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\fotobook\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\fotobook\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#11 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-12-04 05:22:33 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'usuario_id' cannot be null
+[Method: POST, Route: paquetes/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:, :usuario_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:22:33 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'usuario_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (\'paquete mega\', \'paquete con camaras super chidas\', \'1\', \'999\', \'paquete_chido.jpg\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (\'paquete mega\', \'paquete con camaras super chidas\', \'1\', \'999\', \'paquete_chido.jpg\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:, :usuario_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:22:33 --> [Caused by] mysqli_sql_exception: Column 'usuario_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (\'paquete mega\', \'paquete con camaras super chidas\', \'1\', \'999\', \'paquete_chido.jpg\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (\'paquete mega\', \'paquete con camaras super chidas\', \'1\', \'999\', \'paquete_chido.jpg\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (\'paquete mega\', \'paquete con camaras super chidas\', \'1\', \'999\', \'paquete_chido.jpg\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:, :usuario_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 05:23:01 --> mysqli_sql_exception: Column 'usuario_id' cannot be null in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\fotobook\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\fotobook\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#11 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-12-04 05:23:01 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'usuario_id' cannot be null
+[Method: POST, Route: paquetes/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:, :usuario_id:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:23:01 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'usuario_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (\'Paquete básiconcon\', \'camaras y sensores mas un coctelito\', \'1\', \'100\', \'100\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (\'Paquete básiconcon\', \'camaras y sensores mas un coctelito\', \'1\', \'100\', \'100\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:, :usuario_id:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:23:01 --> [Caused by] mysqli_sql_exception: Column 'usuario_id' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (\'Paquete básiconcon\', \'camaras y sensores mas un coctelito\', \'1\', \'100\', \'100\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (\'Paquete básiconcon\', \'camaras y sensores mas un coctelito\', \'1\', \'100\', \'100\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (\'Paquete básiconcon\', \'camaras y sensores mas un coctelito\', \'1\', \'100\', \'100\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario_id`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:, :usuario_id:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 05:24:46 --> mysqli_sql_exception: Unknown column 'usuario' in 'field list' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\fotobook\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\fotobook\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#11 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-12-04 05:24:46 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario' in 'field list'
+[Method: POST, Route: paquetes/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:, :usuario:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:24:46 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquete_chido.jpg\', \'5\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquete_chido.jpg\', \'5\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:, :usuario:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:24:46 --> [Caused by] mysqli_sql_exception: Unknown column 'usuario' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquete_chido.jpg\', \'5\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquete_chido.jpg\', \'5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquete_chido.jpg\', \'5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:, :usuario:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 05:25:38 --> mysqli_sql_exception: Unknown column 'usuario' in 'field list' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\fotobook\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\fotobook\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#11 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-12-04 05:25:38 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario' in 'field list'
+[Method: POST, Route: paquetes/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:, :usuario:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:25:38 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquete_chido.jpg\', \'5\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquete_chido.jpg\', \'5\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:, :usuario:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:25:38 --> [Caused by] mysqli_sql_exception: Unknown column 'usuario' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquete_chido.jpg\', \'5\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquete_chido.jpg\', \'5\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquete_chido.jpg\', \'5\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:, :usuario:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 05:25:42 --> mysqli_sql_exception: Unknown column 'usuario' in 'field list' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\fotobook\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\fotobook\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#11 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-12-04 05:25:42 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario' in 'field list'
+[Method: POST, Route: paquetes/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:, :usuario:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:25:42 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquete_chido.jpg\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquete_chido.jpg\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:, :usuario:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:25:42 --> [Caused by] mysqli_sql_exception: Unknown column 'usuario' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquete_chido.jpg\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquete_chido.jpg\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquete_chido.jpg\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:, :usuario:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ERROR - 2024-12-04 05:28:14 --> mysqli_sql_exception: Unknown column 'usuario' in 'field list' in C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\laragon\www\fotobook\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `pa...', 0)
+#1 C:\laragon\www\fotobook\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pa...')
+#2 C:\laragon\www\fotobook\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pa...')
+#3 C:\laragon\www\fotobook\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pa...', Array, false)
+#4 C:\laragon\www\fotobook\system\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\laragon\www\fotobook\system\BaseModel.php(840): CodeIgniter\Model->doInsert(Array)
+#6 C:\laragon\www\fotobook\system\Model.php(802): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\laragon\www\fotobook\system\BaseModel.php(751): CodeIgniter\Model->insert(Array, false)
+#8 C:\laragon\www\fotobook\app\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save(Array)
+#9 C:\laragon\www\fotobook\system\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+#10 C:\laragon\www\fotobook\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+#11 C:\laragon\www\fotobook\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\laragon\www\fotobook\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#13 C:\laragon\www\fotobook\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#14 C:\laragon\www\fotobook\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#15 {main}
+CRITICAL - 2024-12-04 05:28:14 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario' in 'field list'
+[Method: POST, Route: paquetes/store]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:, :usuario:)', [...], false)
+ 2 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 5 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 6 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:28:14 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'usuario' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquete_chido.jpg\', NULL)')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquete_chido.jpg\', NULL)')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:, :usuario:)', [...], false)
+ 4 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 5 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 6 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 7 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 8 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-12-04 05:28:14 --> [Caused by] mysqli_sql_exception: Unknown column 'usuario' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquete_chido.jpg\', NULL)', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquete_chido.jpg\', NULL)')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (\'paquete mega super grandioso\', \'paquete con camaras super chidas\', \'1\', \'9999\', \'paquete_chido.jpg\', NULL)')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `paquetes` (`nombre`, `descripcion`, `cantidad_fotos`, `precio`, `imagen`, `usuario`) VALUES (:nombre:, :descripcion:, :cantidad_fotos:, :precio:, :imagen:, :usuario:)', [...], false)
+ 5 SYSTEMPATH\Model.php(394): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(840): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(802): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(751): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\PaqueteController.php(39): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PaqueteController->store()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PaqueteController))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
