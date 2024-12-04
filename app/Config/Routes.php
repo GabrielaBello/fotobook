@@ -44,4 +44,4 @@ $routes->get('/paquetes/(:num)/edit', 'PaqueteController::edit/$1'); // Formular
 $routes->post('/paquetes/(:num)/update', 'PaqueteController::update/$1'); // Actualizar un paquete
 $routes->get('/paquetes/(:num)/delete', 'PaqueteController::delete/$1'); // Eliminar un paquete
 
-$routes->get('/plantilla', 'Home::plantilla'); 
+$routes->get('/plantilla', 'Home::plantilla'); //cheto
